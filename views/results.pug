@@ -1,0 +1,23 @@
+html
+  head
+    title= title
+  body
+    h1= "Users"
+    ul
+      each val in users
+        li
+           span= 'User Name: ' + val.username
+           span= ' - '
+           span= 'user Id: ' + val._id
+    hr
+    h1= "Exercises"
+    table
+      each val in exercises
+        tr
+          td= 'user Id:  ' + val.userId
+          td= ' - '
+          td= 'Description:  ' + val.description
+          td= ' - '
+          td= 'Duration:  ' + val.duration
+          td= ' - '
+          td= 'Date:  ' + val.date
